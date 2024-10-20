@@ -27,7 +27,12 @@ mongoose.connect('mongodb+srv://sparshyadavmrt:newpassword@cluster0.ajmb4.mongod
 
 // API routes
 app.use('/api/rules', ruleRoutes);
-
+app.get('/', (req, res) => {
+  res.json({
+    status:true,
+    message:"success"
+  })
+})
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
