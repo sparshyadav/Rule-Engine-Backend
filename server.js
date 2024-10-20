@@ -16,7 +16,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-mongoose.connect('mongodb://127.0.0.1:27017/SampleCheck', {
+mongoose.connect('mongodb+srv://sparshyadavmrt:newpassword@cluster0.ajmb4.mongodb.net/RuleEngine', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
