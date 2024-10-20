@@ -5,7 +5,7 @@ const cors = require('cors');
 const ruleRoutes = require('./routes/ruleRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 2000;
+const PORT = 2000;
 
 app.use(cors());
 app.use(bodyParser.json());
